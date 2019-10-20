@@ -1,0 +1,85 @@
+/*todo 1stPart*/
+
+ul.navi li {
+    background: black;
+}
+
+ul.navi a:link {
+    margin: 10px 20px;
+    color: blue;
+}
+
+ul.navi a:visited {
+    color: violet;
+}
+
+ul.navi a:active {
+    color: green;
+}
+
+ul.navi a:hover {
+    color: greenyellow;
+}
+
+/*todo Second part*/
+
+ul.Brands li:first-child {
+    font-weight: 700;
+    font-size: larger;
+}
+
+ul.Brands li:first-child::after {
+    content: '';
+    background: black;
+    block-size: 1px;
+    display: block;
+}
+
+ul.Brands li:last-child::after {
+    content: '';
+    color: #000000;
+    background: black;
+    block-size: 1px;
+    display: block;
+}
+
+ul.Brands a {
+    display: block;
+    text-decoration: none;
+    color: #444444;
+}
+
+ul.Brands a:hover {
+    color: #999999;
+    text-decoration: underline;
+}
+
+/*Todo Third Part*/
+
+body.third header h1 a img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+body.third header + main section article{
+    background: lightblue;
+}
+
+body.third header + main + footer {
+    color: greenyellow;
+    font-size: larger;
+}
+
+/*Todo Fourth Part*/
+
+body.fourth article h1 {
+    position: center;
+}
+
+.leftimg {
+    float:left;
+    margin: 7px 7px 7px 0;
+}
+
+/*todo Fifth part*/
