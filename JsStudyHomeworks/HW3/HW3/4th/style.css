@@ -1,0 +1,66 @@
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 2.4rem;
+}
+
+
+h1 {
+    font-size: 4.8rem;
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 1500px;
+    align-items: flex-end;
+}
+
+.column{
+    width: 150px;
+    align-items: flex-end;
+}
+
+.red {
+    background-color: #de9797;
+    height: 210px;
+}
+
+.blue {
+    background-color: #979ade;
+    height: 150px;
+}
+
+.green {
+    background-color: #97de99;
+    height: 90px;
+}
+
+.yellow {
+    background-color: #ddde97;
+    height: 300px;
+}
+
+.lightbrown {
+    background-color: #dec997;
+    height: 270px;
+}
+
+.lightblue {
+    background-color: #97deda;
+    height: 180px;
+}
+.pink {
+    background-color: #de97d8;
+    height: 30px;
+}
+
+.violet {
+    background-color: #b097de;
+    height: 105px;
+}
