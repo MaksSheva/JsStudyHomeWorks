@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    font-size: 10px;
+    background-color: #e5e5e5;
+    align-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1170px;
+    font-family: 'Open Sans';
+    color: #333332;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 38px;
+    background: #e5e5e5;
+    align-content: center;
+}
+
+main {
+    max-width: 1170px;
+
+}
+
+.firstSection {
+    max-width: 1170px;
+    margin: 30px;
+    align-content: center;
+    display:inline;
+}
+
+.shapka{
+    display: flex;
+    flex-direction: row;
+    max-width: 780px;
+}
+
+.shapka .headerText{
+margin-left: inherit;
+}
+
+.shapka .headerlinks {
+    margin-right: inherit;
+}
+
+.headerText {
+    max-width: 780px;
+}
+
+
+
+main img {
+max-width: 780px;
+}
+
+aside {
+    float: right;
+}
+
+.headerText h1 {
+    vertical-align: middle;
+    float: left;
+}
+
+.headerText h2 {
+    vertical-align: middle;
+    float: left;
+}
+
+.slider {
+    height: 400px;
+    vertical-align: middle;
+    Background-size: 1170px;
+    background-image: url("../img/slider.jpeg");
+    background-position: center;
+    text-align: center;
+}
