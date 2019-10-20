@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up form</title>
+    <header><h1>Sign up form</h1></header>
+</head>
+<body>
+<div class="container">
+    <form action="/action_page.php" method="get">
+
+        <div>Username: <input type="text" name="Username"></div>
+        <div>E-mail: <input type="email" name="emailaddress"></div>
+        <div>Password: <input type="password" name="password"></div>
+        <div>Sex: <input type="radio" name="Sex" value="Мужской" checked="checked"/> М
+            <input type="radio" name="Sex" value="Женский"/> Ж
+        </div>
+        <div> Age: <input type="number" name="Year"> <input type="number" name="Month"></div>
+        <div>Married: <input type="checkbox" name="Yes"></div>
+        <div>Phone: <input type="tel" id="phone" name="phone" pattern="pattern="
+                           [\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+        </div>
+        <div>City: <select name="menu" size="1">
+            <option value="first">Харьков</option>
+            <option selected="selected" value="second">Киев</option>
+            <option value="third">Одесса</option>
+            <option value="fourth">Любой другой</option>
+        </select></div>
+        <div>About: <input type="text" name="text">
+            <input type="submit" value="Save"></div>
+
+    </form>
+</div>
+</body>
+</html>
