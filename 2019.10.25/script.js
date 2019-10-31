@@ -289,21 +289,17 @@
 ////12th
 
 //todo Найдите и исправьте ошибки в коде:
-let x = prompt('x', 0);
-let error;
+var x = +prompt('x', 0);
+var error = null;
 
 switch (x) {
     case 0: error = 'На ноль делить нельзя'; break;
     case 1: error = 'На единицу делить бессмысленно'; break;
-    case NaN: error = 'Не математическая операция'; break;
 }
 
-if (error !== '') {
+if (x <= 1 ) {
     alert(error);
 } else {
     alert(100 / x);
 }
-
-
-
 //todo =============================================
