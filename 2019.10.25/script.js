@@ -58,7 +58,7 @@
 // let x = parseInt(prompt('Сколько у Вас сбережений? ', '5'));
 // let y = parseInt(prompt('Сколько сбережений у Вашего друга? ', '5'));
 // const z = 1000;
-// if ((x + y) >= z) {
+// if (x + y >= z) {
 //     alert('Дружище, у нас с тобой есть ' + (x + y)  + ' долларов и мы можем полететь на Мальту учить английский!!!');
 // } else {
 //     alert('Дружище, у нас с тобой есть ' + (x + y) + ' долларов. Этого не хватит на Мальту, Но хватит здрово попить пивка!!!');
@@ -173,18 +173,18 @@
 //
 // 'use strict';
 //
-// let lang = prompt('Выберите язык (ru, en, de): ', 'uah').toLowerCase();
+// let lang = prompt('Выберите язык (ru, en, de): ', 'ru').toLowerCase();
 // let greeting;
 //
 // if ( lang !== '') {
 //     switch (lang) {
-//         case 'ru': greeting = alert('Привет! Как дела?'); break;
-//         case 'en': greeting = alert('Hello! How are you?'); break;
-//         case 'de': greeting = alert('Hallo! Wie geht es Ihnen?'); break;
-//         default: alert('Выбранный язык не поддерживается!')
-//     }
+//         case 'ru': greeting = 'Привет! Как дела?'; break;
+//         case 'en': greeting = 'Hello! How are you?'; break;
+//         case 'de': greeting = 'Hallo! Wie geht es Ihnen?'; break;
+//         default: alert('Выбранный язык не поддерживается!(На 3 языках :))'); break;
+//     } alert(greeting);
 // } else {
-//     alert('Выберите язык')
+//     alert('Выберите язык (На 3 языках :)')
 // }
 
 //todo =============================================
@@ -284,22 +284,68 @@
 // } else {
 //     alert('Choose correct language value / Введите корректное значение языка')
 // }
-
+// //todo чтобы не ломать предыдущую логику:
+// 'use strict';
+//
+// var lang = prompt('Выберите язык(en, ru): ', 'en');
+// var day;
+//
+// if (lang === 'ru') {
+//     day = +prompt('Введите день (0 - 6): ', 0);
+//     if (day === 0) {
+//         alert('Воскресенье!')
+//     } else if (day === 1) {
+//         alert('Понедельник!')
+//     } else if (day === 2) {
+//         alert('Вторник!')
+//     } else if (day === 3) {
+//         alert('Среда!')
+//     } else if (day === 4) {
+//         alert('Четверг!')
+//     } else if (day === 5) {
+//         alert('Пятница!')
+//     } else if (day === 6) {
+//         alert('Суббота!')
+//     } else {
+//         alert('Введите корректное значение дня недели!')
+//     }
+// } else if (lang === 'en'){
+//     day = +prompt('Input value for day (0 - 6): ', 0);
+//     if (day === 0) {
+//         alert('Sunday!')
+//     } else if (day === 1) {
+//         alert('Monday!')
+//     } else if (day === 2) {
+//         alert('Tuesday!')
+//     } else if (day === 3) {
+//         alert('Wednesday!')
+//     } else if (day === 4) {
+//         alert('Thursday!')
+//     } else if (day === 5) {
+//         alert('Friday!')
+//     } else if (day === 6) {
+//         alert('Saturday!')
+//     } else {
+//         alert('Input correct value for day!')
+//     }
+// } else {
+//     alert('Выберите язык! \ Choose correct language!')
+// }
 
 ////12th
 
-//todo Найдите и исправьте ошибки в коде:
-var x = +prompt('x', 0);
-var error = null;
-
-switch (x) {
-    case 0: error = 'На ноль делить нельзя'; break;
-    case 1: error = 'На единицу делить бессмысленно'; break;
-}
-
-if (x <= 1 ) {
-    alert(error);
-} else {
-    alert(100 / x);
-}
+// //todo Найдите и исправьте ошибки в коде:
+// var x = +prompt('x', 0);
+// var error = null;
+//
+// switch (x) {
+//     case 0: error = 'На ноль делить нельзя'; break;
+//     case 1: error = 'На единицу делить бессмысленно'; break;
+// }
+//
+// if (x <= 1 ) {
+//     alert(error);
+// } else {
+//     alert(100 / x);
+// }
 //todo =============================================
