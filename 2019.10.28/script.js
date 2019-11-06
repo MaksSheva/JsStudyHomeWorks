@@ -126,12 +126,12 @@
 
 //todo 10) С помощью цикла for с пустым телом сформируйте строку,
 // представляющую из себя ряд Фибоначчи: 0 1 1 2 3 5 8 13...
-
-let prev = 0;
-let next= 0;
-let i = 0;
-
-for (i; next - 55 < 0; next =i + i) console.log(next);
+//
+// let prev = 0;
+// let next= 0;
+// let i = 0;
+//
+// for (i; next - 55 < 0; next =i + i) console.log(next);
 
 // var f,g,h;
 // for (f = g = h = 1; (60-f)>0; f = g + h, h = g, g = f) { console.log(f);}
@@ -175,3 +175,67 @@ for (i; next - 55 < 0; next =i + i) console.log(next);
 //         console.log(i , j);
 //     }
 // }
+
+
+//todo Level UP Level Up
+// Сформируйте строку в виде треугольника-елочки:
+//
+// .....#.....
+// ....###....
+// ...#####...
+// ..#######..
+// .#########.
+// ###########
+
+let dot = '.';
+let hash = '#';
+let result = '';
+
+for (let i = 0; i < 6; i++) {
+   if (i === 0) {
+       for (let j = 0; j < 11; j++) {
+           if (j === 5) {
+               result += hash;
+           } else {
+               result += dot;
+           }
+       } result += '\n';
+   } else if (i === 1) {
+       for (let j = 0; j < 11; j++) {
+           if (j === 4 || j === 5 || j === 6) {
+               result += hash;
+           } else {
+               result += dot;
+           }
+       } result += '\n';
+   } else if (i === 2){
+       for (let j = 0; j < 11; j++) {
+           if (j === 3 || j === 4 || j === 5 || j === 6 || j ===7) {
+               result += hash;
+           } else {
+               result += dot;
+           }
+       } result += '\n';
+   } else if (i === 3){
+       for (let j = 0; j < 11; j++) {
+           if (j === 0 || j === 1 || j === 9 || j === 10) {
+               result += dot;
+           } else {
+               result += hash;
+           }
+       } result += '\n';
+   } else if (i === 4) {
+       for (let j = 0; j < 11; j++) {
+           if (j === 0 || j === 10) {
+               result += dot;
+           } else {
+               result += hash;
+           }
+       } result += '\n';
+   } else  {
+       for (let j = 0; j < 11; j++) {
+               result += hash;
+           }
+       } result += '\n';
+
+} console.log(result);
