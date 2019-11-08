@@ -10,19 +10,15 @@
 // // Happy birthday dear {{username}}
 // // Happy birthday to you
 //
-// let greeting = 'Happy birthday ';
-// let username = 'dear Nataliya';
-// let result = '';
+// let greeting = 'Happy birthday to you';
+// let repeat = 0;
+// let username = 'Nataliya';
 //
-// for (let i = 0; i < 4; i++) {
-//     if (i === 2) {
-//         result += greeting + username + '\n';
-//     } else {
-//         result += greeting + ' to you' + '\n';
-//     }
+// for (repeat; repeat < 2; repeat ++){
+//     console.log(greeting);
 // }
-// console.log(result);
-
+// console.log('Happy birthday dear ' + username);
+// console.log(greeting);
 
 //todo 3) Сформируйте строку вида ".#.#.#.#.#." чередованием символов . и # в каждой итерации
 // с помощью цикла for. После выхода из цикла распечатайте полученную строку.
@@ -33,8 +29,7 @@
 // let result = 0;
 //
 // for (let i = 0; i < 100; i++){
-//     if ( i % 2 === 0) {
-//     result +=dot;
+//     if ( i % 2 === 0) {result +=dot;
 //     } else {
 //         result += hash;
 //     }
@@ -59,6 +54,8 @@
 //    let window = confirm('press ok or cancel');
 //     if (window === true){
 //         break;
+//     } else {
+//         continue;
 //     }
 // }
 
@@ -189,56 +186,56 @@
 // ..#######..
 // .#########.
 // ###########
-//
-// let dot = '.';
-// let hash = '#';
-// let result = '';
-//
-// for (let i = 0; i < 6; i++) {
-//    if (i === 0) {
-//        for (let j = 0; j < 11; j++) {
-//            if (j === 5) {
-//                result += hash;
-//            } else {
-//                result += dot;
-//            }
-//        } result += '\n';
-//    } else if (i === 1) {
-//        for (let j = 0; j < 11; j++) {
-//            if (j === 4 || j === 5 || j === 6) {
-//                result += hash;
-//            } else {
-//                result += dot;
-//            }
-//        } result += '\n';
-//    } else if (i === 2){
-//        for (let j = 0; j < 11; j++) {
-//            if (j === 3 || j === 4 || j === 5 || j === 6 || j ===7) {
-//                result += hash;
-//            } else {
-//                result += dot;
-//            }
-//        } result += '\n';
-//    } else if (i === 3){
-//        for (let j = 0; j < 11; j++) {
-//            if (j === 0 || j === 1 || j === 9 || j === 10) {
-//                result += dot;
-//            } else {
-//                result += hash;
-//            }
-//        } result += '\n';
-//    } else if (i === 4) {
-//        for (let j = 0; j < 11; j++) {
-//            if (j === 0 || j === 10) {
-//                result += dot;
-//            } else {
-//                result += hash;
-//            }
-//        } result += '\n';
-//    } else  {
-//        for (let j = 0; j < 11; j++) {
-//                result += hash;
-//            }
-//        } result += '\n';
-//
-// } console.log(result);
+
+let dot = '.';
+let hash = '#';
+let result = '';
+
+for (let i = 0; i < 6; i++) {
+   if (i === 0) {
+       for (let j = 0; j < 11; j++) {
+           if (j === 5) {
+               result += hash;
+           } else {
+               result += dot;
+           }
+       } result += '\n';
+   } else if (i === 1) {
+       for (let j = 0; j < 11; j++) {
+           if (j === 4 || j === 5 || j === 6) {
+               result += hash;
+           } else {
+               result += dot;
+           }
+       } result += '\n';
+   } else if (i === 2){
+       for (let j = 0; j < 11; j++) {
+           if (j === 3 || j === 4 || j === 5 || j === 6 || j ===7) {
+               result += hash;
+           } else {
+               result += dot;
+           }
+       } result += '\n';
+   } else if (i === 3){
+       for (let j = 0; j < 11; j++) {
+           if (j === 0 || j === 1 || j === 9 || j === 10) {
+               result += dot;
+           } else {
+               result += hash;
+           }
+       } result += '\n';
+   } else if (i === 4) {
+       for (let j = 0; j < 11; j++) {
+           if (j === 0 || j === 10) {
+               result += dot;
+           } else {
+               result += hash;
+           }
+       } result += '\n';
+   } else  {
+       for (let j = 0; j < 11; j++) {
+               result += hash;
+           }
+       } result += '\n';
+
+} console.log(result);
