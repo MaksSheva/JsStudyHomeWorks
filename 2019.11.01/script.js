@@ -20,19 +20,19 @@
 // прочитанными из prompt (например: brand, model, resolution, color...), не используя
 // вспомогательные переменные. Добавьте этот гаджет персоне, созданной ранее.
 
-let person = {
-    firstname: prompt('Firstname', 'john'),
-    lastname: prompt('Lastname', 'doe'),
-    age: 30,
-};
-
- person.cellphone = {
-         brand: prompt('Brand', 'Xiaomi'),
-         model: prompt('Model', 'Mi MIX 3'),
-         resolution: +prompt('resolution', 1080),
-         color: prompt('Color', 'black')
- };
- console.log(person);
+// let person = {
+//     firstname: prompt('Firstname', 'john'),
+//     lastname: prompt('Lastname', 'doe'),
+//     age: 30,
+// };
+//
+//  person.cellphone = {
+//          brand: prompt('Brand', 'Xiaomi'),
+//          model: prompt('Model', 'Mi MIX 3'),
+//          resolution: +prompt('resolution', 1080),
+//          color: prompt('Color', 'black')
+//  };
+//  console.log(person);
 
 
 //todo 3) Запустите бесконечный цикл. В цикле вызывайте prompt, в котором пишется либо delete, либо update.
@@ -41,27 +41,90 @@ let person = {
 // Какое значение будет у добавленного свойства - тоже берется из prompt. При нажатии на Отмена при появлении
 // prompt редактирование person заканчивается. И обновленные данные распечатываются в консоли.
 
+// let person = {
+//     firstname: 'john',
+//     lastname: 'doe',
+//     age: 30,
+//     cellphone: {
+//         brand: 'Xiaomi',
+//         model: 'Mi MIX 3',
+//         resolution: 1080,
+//         color: 'black'
+//     }
+// };
+// debugger;
+// while (true) {
+//     let input = prompt('Choose delete or edit', 'edit');
+//     if (input === 'delete') {
+//         let deleteParam = prompt('What param we need to remove?', 'age');
+//         delete person[deleteParam];
+//         break;
+//
+//     } else if (input === 'edit') {
+//         let editParam = prompt('What param we need to edit?', 'age');
+//             let newData = prompt('Insert new value', 'value');
+//             if (isNaN(newData)) {
+//             } else {
+//                 newData = parseInt(newData);
+//             }
+//             person[editParam] = (newData);
+//             break;
+//         } else {
+//         break;
+//     }
+// }
+// console.log(person);
 
 
-//todo 4) Напишите цикл с шагом 1, в теле которого распечатываются квадраты каждого четного
+//todo 4) Динамически (скриптом) создайте HTML элемент <dl>. Переберите в цикле (for..in)
+// сгенерированный ранее объект person, добавляя dt - для имени свойства и dd - для значения свойства.
+//
+// let person = {
+//     firstname: 'john',
+//     lastname: 'doe',
+//     age: 30,
+//     cellphone: {
+//         brand: 'Xiaomi',
+//         model: 'Mi MIX 3',
+//         resolution: 1080,
+//         color: 'black'
+//     }
+// };
+//
+// let listElement = document.createElement('dl');
+// document.body.appendChild(listElement);
+//
+// for (let key in person) {
+//     if (typeof person[key]) {
+//
+//         let titleElement = document.createElement('dt');
+//         listElement.appendChild(titleElement);
+//         titleElement.innerText = key;
+//
+//         let defElement = document.createElement('dd');
+//         listElement.appendChild(defElement);
+//         defElement.innerText = person[key];
+//     }
+// }
+// console.log();
 
-//todo 5) Напишите цикл с confirm, который продолжается при нажатии
+//todo 5) Создайте объект dates для хранения дат. Первая дата – позавчера. Вторая дата – текущая дата
+// (new Date) минус 365 дней. Из prompt читается дата в формате yyyy-MM-dd. Проверьте, попадает ли
+// введенная дата в диапазон дат объекта dates.
 
-//todo 6) В окно prompt вводится число. Напишите цикл, в котором суммируются все нечетные числа
-// до диапазона, введенного пользователем. Результат отобразите в окне alert.
+//todo 6)
 
-//todo 7) Напишите бесконечный цикл, который прерывается при помощи команды break, когда Math.random() > 0.99.
+//todo 7)
 
-//todo 8) Используя вложенные циклы, распечатайте в консоли значения таблицы умножения: 1х1=1, 1x2=2 ... 2x1=2, 2x2=4...
+//todo 8)
 
-//todo 9) Используя вложенные циклы, сформируйте строку чередованием символов . и # таким образом, чтобы получился
+//todo 9)
 
-//todo 10) С помощью цикла for с пустым телом сформируйте строку,
+//todo 10)
 
-//todo 11) Напишите проверку пароля, введенного пользователем. Если введенный пароль правильный,
+//todo 11)
 
-//todo 12) Найдите и исправьте ошибки в коде:
+//todo 12)
 
-//todo Level UP Level Up
-// Сформируйте строку в виде треугольника-елочки:
+//todo Level UP
 
