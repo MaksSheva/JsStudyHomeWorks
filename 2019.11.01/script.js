@@ -111,20 +111,38 @@
 //todo 5) Создайте объект dates для хранения дат. Первая дата – позавчера. Вторая дата – текущая дата
 // (new Date) минус 365 дней. Из prompt читается дата в формате yyyy-MM-dd. Проверьте, попадает ли
 // введенная дата в диапазон дат объекта dates.
+//
+// const day = 86400000;
+// let startDate =  Date.now();
+// let insertedDate = prompt('Insert date in format "yyyy-mm-dd"!' );
+// insertedDate=insertedDate.split("-");
+// let newDate=insertedDate[2]+"/"+insertedDate[1]+"/"+insertedDate[0];
+// let d4 = new Date(newDate).getTime();
+// let dates = {
+//     d1: startDate - day * 2,
+//     d2: startDate - day * 365,
+//     d3: d4
+// };
+// if (dates.d1 > dates.d3 && dates.d3 > dates.d2) {
+//     alert('Ееее бой!!! Введенная дата попадает в необходимый диапазон дат!')
+// } else {
+//     alert('Упс :( Введенная дата пролетела мимо заданного диапазона!');
+// }
 
-//todo 6)
+//todo 6) Создайте структуру данных, полностью описывающую html-разметку картинки.
+// С помощью методов браузера добавьте ее на страницу со всеми атрибутами, читая значения свойств из созданного объекта.
 
-//todo 7)
-
-//todo 8)
-
-//todo 9)
-
-//todo 10)
-
-//todo 11)
-
-//todo 12)
-
-//todo Level UP
-
+// let image = {
+//     src: "https://www.google.com.ua/logos/doodles/2017/bella-akhmadulinas-80th-birthday-5134676388741120.3-law.gif",
+//     alt: "Here you can imagine some image",
+//     styler: "border: 1px solid #ccc",
+//     width: "200"
+// };
+//
+// let imageElement = document.createElement('img');
+//
+// imageElement.src = image.src;
+// imageElement.alt = image.alt;
+// imageElement.style = image.styler;
+// imageElement.width = image.width;
+// document.body.appendChild(imageElement);
