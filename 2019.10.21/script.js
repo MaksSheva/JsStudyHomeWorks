@@ -83,11 +83,11 @@
 //todo =============================================
 
 //10th
-'use strict';
-
-let x = Math.round(Math.random()*100);
-let y = parseInt(prompt('Введите число: ', '32'))
-alert('Результаты сравнения и значения переменных: '
-    + 'x < y= ' + (Boolean(x < y) )
-    + ', x = ' + x
-    + ', y = ' + y );
+// 'use strict';
+//
+// let x = Math.round(Math.random()*100);
+// let y = parseInt(prompt('Введите число: ', '32'))
+// alert('Результаты сравнения и значения переменных: '
+//     + 'x < y= ' + (Boolean(x < y) )
+//     + ', x = ' + x
+//     + ', y = ' + y );
