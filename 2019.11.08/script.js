@@ -151,10 +151,44 @@
 
 //todo 8) Напишите функцию, которая в строке, состоящей из чисел, разделенных пробелом,
 // находит максимальное и минимальное, и возвращает их
+// debugger;
+//
+// function highAndLow(data) {
+//     let intData = data.split([' ']);
+//     let arr = [];
+//
+//     for (let i = 0; i < data.length; i++) {
+//         intData[i] = parseInt(intData[i]);
+//         if (typeof intData[i] === "number" && isNaN(intData[i]) === false) {
+//             arr.push(intData[i]);
+//         }
+//     }
+//
+//     function f(a, b) {
+//         return a - b;
+//     }
+//
+//     data = arr.sort(f);
+//     console.log(data);
+//     let min = data[0];
+//     let max = data[data.length -1];
+//     return alert(`Минимальное число: ${min} , Максимальное число: ${max}`);
+// }
+//
+// let x = highAndLow('10 110 25 s3 109 2 12 34');
+// console.log(x);
 
-function highAndLow(data) {
-    let resultData = parseInt(data);
- console.log(resultData);
-}
+//todo 9) Найдите и исправьте ошибки в коде:
 
-highAndLow('10 d 25 sa 30 50 ad 34');
+// function foo() {
+//     function bar(a) {
+//         let i = 3; //todo нужно было дописать let или var, чтобы переменная не выходила за область видимости функции.
+//         return i + a;
+//     }
+//
+//     for (var i = 0; i < 10; i++) {
+//         console.log( bar(i * 2) );
+//     }
+// }
+//
+// foo(); // 3 5 7 9 11 13 15 17 19 21
