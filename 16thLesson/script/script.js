@@ -14,6 +14,7 @@ function clickHandler(event) {
     inputElement.setAttribute('type', type);
     parentElement.appendChild(inputElement);
     inputElement.value = targetElement.innerText;
+    inputElement.classList.add('form-control');
 
     parentElement.removeChild(targetElement);
     inputElement.select();
