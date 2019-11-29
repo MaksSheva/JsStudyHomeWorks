@@ -1,0 +1,85 @@
+/*.paragraph-colour {*/
+/*    color: aqua;*/
+/*}*/
+
+/*.font-size-big {*/
+/*    color: red;*/
+/*    font-size: 26px;*/
+/*}*/
+
+/*.font-size-big.paragraph-colour {*/
+/*    color: violet;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*#Item {*/
+/*    background: green;*/
+/*}*/
+
+/*[class="font-size-big"] {*/
+/*    color: lightcoral;*/
+/*}*/
+
+input[type="checkbox"].styled {
+    display: none;
+}
+
+
+input[type="checkbox"].styled + label::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: red;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 1px solid #990065;
+    border-radius: 4px;
+    color: #000;
+    transition: color 0.3s linear;
+}
+
+input[type="checkbox"].styled:checked + label::before{
+    content: '\2713';
+    color: #990065;
+    font-size: 30px;
+    line-height: 10px;
+}
+
+/*input[type="radio"].styled {*/
+/*    display: none;*/
+/*}*/
+
+input[type="radio"].styled + label::before {
+    content: '\2824';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: red;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 1px solid #990065;
+    border-radius: 4px;
+    color: #000;
+    transition: color 0.3s linear;
+}
+
+input[type="radio"].styled:checked + label::before{
+    content: '\2824';
+    color: #990065;
+    font-size: 30px;
+    line-height: 10px;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+
+
+
+
+
+
+

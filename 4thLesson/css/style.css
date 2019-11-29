@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    font-size: 1.4rem;
+    background: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+main {
+    display: flex;
+
+}
+
+.content {
+    width: 970px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    width: 67%;
+}
+
+aside {
+    width: 33%;
+    margin-left: 30px;
+}
+
+article {
+    color: #6B6B6B;
+    background: #ffffff;
+}
+
+article img {
+    transition: opacity 0.3s;
+}
+
+article img:hover {
+    opacity: 0.7;
+}
+
+article h1 a {
+    color: #444444;
+    font-size: 2.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+article h1 a:hover {
+    color: #DA4453;
+}
+
+article .articleBody {
+    padding: 45px 50px;
+    border: 1px solid #dadada;
+}
+
+article .articleBody::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article .meta {
+    display: flex;
+
+}
+
+article .meta a {
+    text-decoration: none;
+    color: inherit;
+}
+
+article .meta div {
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+article .meta div:last-child {
+    margin-right: 0px;
+}
+
+article .readmore-button {
+    background: #DA4453;
+    color: white;
+    text-transform: uppercase;
+    padding: 11px 13px;
+    border-radius: 4px;
+    float: right;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+
+article .readmore-button:hover {
+    background: black;
+    border: 1px solid #000000;
+}
